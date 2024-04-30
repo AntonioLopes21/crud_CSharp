@@ -1,0 +1,14 @@
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\bin\Debug\net8.0\NovoProjetoPOOO.exe
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\bin\Debug\net8.0\NovoProjetoPOOO.deps.json
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\bin\Debug\net8.0\NovoProjetoPOOO.runtimeconfig.json
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\bin\Debug\net8.0\NovoProjetoPOOO.dll
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\bin\Debug\net8.0\NovoProjetoPOOO.pdb
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\NovoProjetoPOOO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\NovoProjetoPOOO.AssemblyInfoInputs.cache
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\NovoProjetoPOOO.AssemblyInfo.cs
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\NovoProjetoPOOO.csproj.CoreCompileInputs.cache
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\NovoProjetoPOOO.dll
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\refint\NovoProjetoPOOO.dll
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\NovoProjetoPOOO.pdb
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\NovoProjetoPOOO.genruntimeconfig.cache
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\ref\NovoProjetoPOOO.dll
