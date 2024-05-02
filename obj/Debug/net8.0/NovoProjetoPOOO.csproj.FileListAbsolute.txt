@@ -12,3 +12,4 @@ C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\refint\NovoProje
 C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\NovoProjetoPOOO.pdb
 C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\NovoProjetoPOOO.genruntimeconfig.cache
 C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\ref\NovoProjetoPOOO.dll
+C:\Users\antonio.lopes\Desktop\NovoProjetoPOOO\obj\Debug\net8.0\NovoProjetoPOOO.sourcelink.json

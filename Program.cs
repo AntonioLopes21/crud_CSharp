@@ -10,72 +10,46 @@ internal class Program
         p1.Apresentar();
 
 
+        string[] funcao = new string[] { "comprador", "vendedor", "intermediador" };
 
-        Console.WriteLine("Bem vindo ao sistema de cadastro de comprador e intermediador! o que você é:\n Comprador = 1  Vendedor = 2\n");
+
+        Console.WriteLine("Bem vindo ao sistema de cadastro de comprador e intermediador! o que você é:\n Comprador = 1  Vendedor = 2 Intermediador = 3\n");
         int tipo = Convert.ToInt32(Console.ReadLine());
 
-        if (tipo == 1)
+        Console.WriteLine("você quer \n1.adicionar\n2.remover\n3.listar\n4.editar");
+        int menu = Convert.ToInt32(Console.ReadLine());
+
+        switch (menu)
         {
+            case 1:
+                Console.WriteLine("Adicionar " + funcao[tipo - 1]);
+                break;
 
-            int menu = 0;
-            switch (menu)
-            {
-                case 1:
-                    Console.WriteLine("adicionar comprador:");
-                    break;
+            case 2:
+                Console.WriteLine("remover " + funcao[tipo -1]);
+                break;
 
-                case 2:
-                    Console.WriteLine("remover comprador:");
-                    break;
+            case 3:
+                Console.WriteLine("listar " + funcao[tipo -1]);
+                break;
 
-                case 3:
-                    Console.WriteLine("listar comprador:");
-                    break;
+            case 4:
+                Console.WriteLine("editar " + funcao[tipo -1]);
+                break;
 
-                case 4:
-                    Console.WriteLine("editar comprador:");
-                    break;
+            case 5:
+                Console.WriteLine("encerrar programa:");
+                menu = 1;
+                Console.WriteLine("programa encerrado com sucesso!");
+                break;
 
-                case 5:
-                    Console.WriteLine("encerrar programa:");
-                    menu = 1;
-                    Console.WriteLine("programa encerrado com sucesso!");
-                    break;
-            }
+            default:
+                AgradecimentosPorUtilizarOPrograma();
+                Environment.Exit(0);
+                break;
         }
-        if (tipo == 2)
-        {
-            int menu = 0;
-            switch (menu)
-            {
-                case 1:
-                    Console.WriteLine("adicionar vendedor:");
-                    break;
 
-                case 2:
-                    Console.WriteLine("remover vendedor:");
-                    break;
-
-                case 3:
-                    Console.WriteLine("listar comprador:");
-                    break;
-
-                case 4:
-                    Console.WriteLine("editar comprador:");
-                    break;
-
-                case 5:
-                    Console.WriteLine("encerrar programa:");
-                    menu = 1;
-                    Console.WriteLine("programa encerrado com sucesso!");
-                    break;
-            }
-        }
-        else
-        {
-            AgradecimentosPorUtilizarOPrograma();
-            Environment.Exit(0);
-        }
+        
     }
 
 
@@ -84,4 +58,9 @@ internal class Program
     {
         Console.WriteLine("Obrigado por utilizar o programa!");
     }
+
+    //isso é uma tupla
+    //     (int, string, string) tupla = (21,"Paulo", "Paulo@PAULO.com");
+    //      Console.WriteLine(tupla.Item1)
+
 }
