@@ -28,7 +28,7 @@ internal class Program
         switch (menu)
         {
             case 1:
-                Console.WriteLine("Bem vindo ao adicionar" + funcao[tipo - 1] + "! digite o nome da pessoa:\n");
+                Console.WriteLine("Bem vindo ao adicionar " + funcao[tipo - 1] + "! digite o nome da pessoa:\n");
                 Nome = Console.ReadLine();
 
                 if (!string.IsNullOrEmpty(Nome))
@@ -39,7 +39,7 @@ internal class Program
                 break;
 
             case 2:
-                Console.WriteLine("Remover" + funcao[tipo - 1] + ":\n digite o nome da pessoa");
+                Console.WriteLine("Remover " + funcao[tipo - 1] + ":\n digite o nome da pessoa");
                 Nome = Console.ReadLine();
 
                 if (!string.IsNullOrEmpty(Nome))
@@ -69,7 +69,7 @@ internal class Program
                     Console.WriteLine("Digite o novo nome da pessoa:");
                     string novoNome = Console.ReadLine();
 
-                    Pessoa pessoaParaEditar = Pessoa.ListaDePessoas.Find(p => p.Nome == nome);
+                    Pessoa pessoaParaEditar = pessoa.ListaDePessoa.Find(p => p.Nome == nome);
                     if (pessoaParaEditar != null)
                     {
                         pessoaParaEditar.Nome = novoNome;

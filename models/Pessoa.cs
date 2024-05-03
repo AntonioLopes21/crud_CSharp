@@ -32,7 +32,7 @@ namespace NovoProjetoPOOO.models
             if (Nome != null)
             {
                 Pessoa pessoa = new Pessoa(Nome);
-                Console.WriteLine($"o nome" + Nome + " foi cadastrado com sucesso");
+                Console.WriteLine($"o nome " + Nome + " foi cadastrado com sucesso");
                 ListaDePessoa.Add(pessoa);
             }
             else

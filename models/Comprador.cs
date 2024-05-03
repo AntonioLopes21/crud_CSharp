@@ -8,7 +8,7 @@ namespace NovoProjetoPOOO.models
 {
     public class Comprador : Pessoa
     {
-        public Comprador(string nome, long cpf) : base(nome, cpf)
+        public Comprador(string nome) : base(nome)
         {
             
         }

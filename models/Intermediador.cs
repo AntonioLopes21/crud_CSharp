@@ -7,7 +7,7 @@ namespace NovoProjetoPOOO.models
 {  
     public class Intermediador : Pessoa
     {
-        public Intermediador(string nome, long cpf) : base(nome, cpf)
+        public Intermediador(string nome) : base(nome)
         {
             
         }
