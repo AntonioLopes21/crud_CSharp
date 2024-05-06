@@ -20,7 +20,7 @@ namespace NovoProjetoPOOO.models
         public string Nome { get; set; }
 
         string[] funcao = new string[] { "comprador", "vendedor", "intermediador" };
-        public List<Pessoa> ListaDePessoa = new List<Pessoa>();
+        public static List<Pessoa> ListaDePessoa = new List<Pessoa>();
 
         public void Apresentar()
         {
@@ -45,8 +45,8 @@ namespace NovoProjetoPOOO.models
         {
             if (Nome != null)
             {
-                Pessoa pessoaParaRemover = ListaDePessoa.Find(p=>p.Nome == Nome);
-            
+                Pessoa pessoaParaRemover = ListaDePessoa.Find(p => p.Nome == Nome);
+
                 if (pessoaParaRemover != null)
                 {
                     ListaDePessoa.Remove(pessoaParaRemover);
@@ -60,30 +60,49 @@ namespace NovoProjetoPOOO.models
                     return false;
                 }
             }
-            else 
+            else
             {
                 Console.WriteLine("o nome não pode ser nulo");
                 return false;
             }
-            
-            
+
+
         }
 
         public void ListarPessoa()
         {
-            Console.WriteLine("Aqui está a lista de pessoas cadastradas:\n");
-            string Nome = Console.ReadLine();
-            Console.WriteLine($"o nome" + Nome + " foi cadastrado com sucesso");
-
+            if (ListaDePessoa.Count == 0)
+            {
+                Console.WriteLine("Nenhuma pessoa está cadastrada no momento.");
+                return;
+            }
+            Console.WriteLine("Lista de pessoas:");
             foreach (var pessoa in ListaDePessoa)
             {
-                Console.WriteLine(pessoa);
+                Console.WriteLine($"Nome: {pessoa.Nome}");
             }
+
         }
 
-        public void EditarPessoa()
+        public void EditarPessoa(string nome, string novoNome)
         {
-
+            if (!string.IsNullOrEmpty(nome) && !string.IsNullOrEmpty(novoNome))
+            {
+                Pessoa pessoaParaEditar = ListaDePessoa.Find(p => p.Nome == nome);
+                if (pessoaParaEditar != null)
+                {
+                    pessoaParaEditar.Nome = novoNome;
+                    Console.WriteLine("Pessoa editada com sucesso!\n\n");
+                }
+                else
+                {
+                    Console.WriteLine("Pessoa não encontrada na lista.\n\n");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Nome inválido.\n\n");
+            }
         }
 
     }
